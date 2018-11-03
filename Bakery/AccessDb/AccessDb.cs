@@ -25,8 +25,10 @@ namespace Bakery.AccessDb
 
         private string GetConnectionString()
         {
-            return @"Data Source=" + Properties.Settings.Default.ServerName + ";Initial Catalog=QuanLyTiemBanh;Integrated Security=SSPI;" +
-                    "User ID=" + LoginName + ";Password= " + Password + ";";
+            //return @"Data Source=" + Properties.Settings.Default.ServerName + 
+            //        ";Initial Catalog=QuanLyTiemBanh;Integrated Security=SSPI" +
+            //        ";User ID=" + LoginName + ";Password= " + Password + ";";
+            return @"Server = " + Properties.Settings.Default.ServerName + ";Database = QuanLyTiemBanh; User Id = " + LoginName + "; Password = " + Password + ";";
         }
 
         public bool ConnectDatabase()

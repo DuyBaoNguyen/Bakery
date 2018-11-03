@@ -13,6 +13,7 @@ namespace Bakery
         Image image = null;
         Color borderColor = Color.Black;
         float borderWidth = 0;
+        int imageHeight = 0;
 
         public Color BorderColor
         {
@@ -99,6 +100,23 @@ namespace Bakery
             }
         }
 
+        public int ImageHeight
+        {
+            get
+            {
+                return imageHeight;
+            }
+            set
+            {
+                imageHeight = value;
+                if (imageHeight < 0)
+                {
+                    imageHeight = 0;
+                }
+                Invalidate();
+            }
+        }
+
         public Color Color
         {
             get
@@ -119,7 +137,7 @@ namespace Bakery
             this.SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
         }
 
-        private GraphicsPath GetGraphicsPath()
+        private GraphicsPath GetGraphicsPath(int imageHeight = 0)
         {
             GraphicsPath gp = new GraphicsPath();
             float diameterArc = (this.Height - borderWidth) * roundScale;
@@ -127,9 +145,17 @@ namespace Bakery
             {
                 gp.AddArc(borderWidth / 2, borderWidth / 2, diameterArc, diameterArc, 180, 90);
                 gp.AddArc(this.Width - diameterArc - borderWidth / 2, borderWidth / 2, diameterArc, diameterArc, 270, 90);
-                gp.AddArc(this.Width - diameterArc - borderWidth / 2, this.Height - diameterArc - borderWidth / 2, diameterArc, diameterArc, 0, 90);
-                gp.AddArc(borderWidth / 2, this.Height - diameterArc - borderWidth / 2, diameterArc, diameterArc, 90, 90);
-                gp.AddLine(borderWidth / 2, this.Height - diameterArc / 2 - borderWidth, borderWidth / 2, borderWidth / 2 + diameterArc / 2);
+                if (imageHeight > 0)
+                {
+                    gp.AddLine(this.Width - 1, imageHeight, 0, imageHeight);
+                    gp.AddLine(borderWidth / 2, imageHeight, borderWidth / 2, borderWidth / 2 + diameterArc / 2);
+                }
+                else
+                {
+                    gp.AddArc(this.Width - diameterArc - borderWidth / 2, this.Height - diameterArc - borderWidth / 2, diameterArc, diameterArc, 0, 90);
+                    gp.AddArc(borderWidth / 2, this.Height - diameterArc - borderWidth / 2, diameterArc, diameterArc, 90, 90);
+                    gp.AddLine(borderWidth / 2, this.Height - diameterArc / 2 - borderWidth, borderWidth / 2, borderWidth / 2 + diameterArc / 2);
+                }
             }
             else
             {
@@ -141,11 +167,21 @@ namespace Bakery
         private Image GetImage()
         {
             Image displayImage = null;
+            int height;
             if (image != null)
             {
-                if (image.Width > this.Width && image.Height > this.Height)
+                if (imageHeight > 0)
                 {
-                    displayImage = new Bitmap(image, this.Width, this.Height);
+                    height = imageHeight;
+                }
+                else
+                {
+                    height = this.Height;
+                }
+
+                if (image.Width > this.Width && image.Height > height)
+                {
+                    displayImage = new Bitmap(image, this.Width, height);
                 }
                 else if (image.Width > this.Width)
                 {
@@ -153,14 +189,14 @@ namespace Bakery
                 }
                 else if (image.Height > this.Height)
                 {
-                    displayImage = new Bitmap(image, image.Width, this.Height);
+                    displayImage = new Bitmap(image, image.Width, height);
                 }
                 else
                 {
                     displayImage = new Bitmap(image);
                 }
 
-                Image bmp = new Bitmap(this.Width, this.Height);
+                Image bmp = new Bitmap(this.Width, height);
                 using (Graphics g = Graphics.FromImage(bmp))
                 {
                     g.DrawImage(displayImage, (bmp.Width - displayImage.Width) / 2, (bmp.Height - displayImage.Height) / 2);
@@ -184,12 +220,15 @@ namespace Bakery
 
                 if (image != null)
                 {
-                    Image displayImage = GetImage();
-                    using (TextureBrush brush = new TextureBrush(displayImage))
+                    using (GraphicsPath imageGp = GetGraphicsPath(imageHeight))
                     {
-                        pe.Graphics.FillPath(brush, gp);
+                        Image displayImage = GetImage();
+                        using (TextureBrush brush = new TextureBrush(displayImage))
+                        {
+                            pe.Graphics.FillPath(brush, imageGp);
+                        }
+                        displayImage.Dispose();
                     }
-                    displayImage.Dispose();
                 }
 
                 if (borderWidth > 0)

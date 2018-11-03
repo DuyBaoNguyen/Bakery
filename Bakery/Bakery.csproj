@@ -46,6 +46,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccessDb\AccessDb.cs" />
+    <Compile Include="CakeItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CakeItem.Designer.cs">
+      <DependentUpon>CakeItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CakeSalePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CakeSalePanel.Designer.cs">
+      <DependentUpon>CakeSalePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventList.cs" />
+    <Compile Include="FlowLayoutPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FlowLayoutPanel.Designer.cs">
+      <DependentUpon>FlowLayoutPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManagerPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -58,28 +77,38 @@
     <Compile Include="CircularButton.Designer.cs">
       <DependentUpon>CircularButton.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConnectServerForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ConnectServerForm.Designer.cs">
-      <DependentUpon>ConnectServerForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="HandleData\AccountData.cs" />
-    <Compile Include="HandleData\CakeData.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="HandleData\AccountData.cs" />
+    <Compile Include="HandleData\CakeData.cs" />
     <Compile Include="MappingModel\Account.cs" />
+    <Compile Include="MappingModel\Cake.cs" />
     <Compile Include="MappingModel\Employee.cs" />
+    <Compile Include="MappingModel\Order.cs" />
+    <Compile Include="OrderCakeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderCakeForm.Designer.cs">
+      <DependentUpon>OrderCakeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OrderItem.Designer.cs">
+      <DependentUpon>OrderItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OrderPanel.Designer.cs">
+      <DependentUpon>OrderPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Other\ListOrder.cs" />
+    <Compile Include="Other\Support.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RoundButton.cs">
@@ -94,23 +123,56 @@
     <Compile Include="RoundPanel.Designer.cs">
       <DependentUpon>RoundPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="SaleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaleForm.Designer.cs">
+      <DependentUpon>SaleForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SalePanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="SalePanel.Designer.cs">
       <DependentUpon>SalePanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="SalePanel1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SalePanel1.Designer.cs">
+      <DependentUpon>SalePanel1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SearchBox.Designer.cs">
+      <DependentUpon>SearchBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransparentLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TransparentLabel.Designer.cs">
+      <DependentUpon>TransparentLabel.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CakeItem.resx">
+      <DependentUpon>CakeItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CakeSalePanel.resx">
+      <DependentUpon>CakeSalePanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManagerPanel.resx">
       <DependentUpon>ManagerPanel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ConnectServerForm.resx">
-      <DependentUpon>ConnectServerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <EmbeddedResource Include="OrderCakeForm.resx">
+      <DependentUpon>OrderCakeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderItem.resx">
+      <DependentUpon>OrderItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderPanel.resx">
+      <DependentUpon>OrderPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -122,8 +184,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="SalePanel.resx">
-      <DependentUpon>SalePanel.cs</DependentUpon>
+    <EmbeddedResource Include="SaleForm.resx">
+      <DependentUpon>SaleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalePanel1.resx">
+      <DependentUpon>SalePanel1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchBox.resx">
+      <DependentUpon>SearchBox.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -157,9 +225,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\server.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Load.gif" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\home.png" />
@@ -196,6 +261,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cart_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_small.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dropdown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\load.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cur_emp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\garbagebin.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

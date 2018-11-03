@@ -1,19 +1,25 @@
-﻿using Bakery.Other;
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.Drawing;
+using System.Data;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+using Bakery.Other;
 
 namespace Bakery
 {
-    public partial class SalePanel : UserControl
+    public partial class SalePanel1 : UserControl
     {
         bool firstLoad = true;
 
-        public SalePanel()
+        public SalePanel1()
         {
             InitializeComponent();
         }
-
+        
         private void MenuItem_Paint(object sender, PaintEventArgs e)
         {
             RadioButton rbn = sender as RadioButton;
@@ -47,8 +53,8 @@ namespace Bakery
         private void SalePanel_Load(object sender, EventArgs e)
         {
             cakeMenuItemRbn.Checked = true;
-            //ListOrder.Instance.OnAdd += new EventHandler(Order_Added);
-            //ListOrder.Instance.OnRemove += new EventHandler(Order_Removed);
+            ListOrder.Instance.OnAdd += new EventHandler(Order_Added);
+            ListOrder.Instance.OnRemove += new EventHandler(Order_Removed);
         }
 
         private void Order_Added(object sender, EventArgs e)

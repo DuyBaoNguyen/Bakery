@@ -16,14 +16,7 @@ namespace Bakery
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            if (Properties.Settings.Default.SuccessfullAccess)
-            {
-                Application.Run(new LoginForm());
-            }
-            else
-            {
-                Application.Run(new ConnectServerForm());
-            }
+            Application.Run(new LoginForm());
         }
     }
 }

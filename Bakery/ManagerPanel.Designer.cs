@@ -29,31 +29,31 @@
         private void InitializeComponent()
         {
             this.menuPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.roundPanel8 = new Bakery.RoundPanel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.roundPanel7 = new Bakery.RoundPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.roundPanel3 = new Bakery.RoundPanel();
-            this.empLb = new System.Windows.Forms.Label();
-            this.roundPanel2 = new Bakery.RoundPanel();
-            this.costLb = new System.Windows.Forms.Label();
-            this.roundPanel1 = new Bakery.RoundPanel();
-            this.cakeLb = new System.Windows.Forms.Label();
-            this.roundPanel4 = new Bakery.RoundPanel();
-            this.salLb = new System.Windows.Forms.Label();
-            this.roundPanel5 = new Bakery.RoundPanel();
-            this.accLb = new System.Windows.Forms.Label();
-            this.roundPanel6 = new Bakery.RoundPanel();
-            this.billLb = new System.Windows.Forms.Label();
+            this.statisticItemPnl = new Bakery.RoundPanel();
+            this.transparentLabel7 = new Bakery.TransparentLabel();
+            this.billItemPnl = new Bakery.RoundPanel();
+            this.transparentLabel6 = new Bakery.TransparentLabel();
+            this.empItemPnl = new Bakery.RoundPanel();
+            this.transparentLabel3 = new Bakery.TransparentLabel();
+            this.costItemPnl = new Bakery.RoundPanel();
+            this.transparentLabel2 = new Bakery.TransparentLabel();
+            this.cakeItemPnl = new Bakery.RoundPanel();
+            this.transparentLabel1 = new Bakery.TransparentLabel();
+            this.salItemPnl = new Bakery.RoundPanel();
+            this.transparentLabel4 = new Bakery.TransparentLabel();
+            this.accItemPnl = new Bakery.RoundPanel();
+            this.transparentLabel5 = new Bakery.TransparentLabel();
+            this.settingItemPnl = new Bakery.RoundPanel();
+            this.transparentLabel8 = new Bakery.TransparentLabel();
             this.menuPanel.SuspendLayout();
-            this.roundPanel8.SuspendLayout();
-            this.roundPanel7.SuspendLayout();
-            this.roundPanel3.SuspendLayout();
-            this.roundPanel2.SuspendLayout();
-            this.roundPanel1.SuspendLayout();
-            this.roundPanel4.SuspendLayout();
-            this.roundPanel5.SuspendLayout();
-            this.roundPanel6.SuspendLayout();
+            this.statisticItemPnl.SuspendLayout();
+            this.billItemPnl.SuspendLayout();
+            this.empItemPnl.SuspendLayout();
+            this.costItemPnl.SuspendLayout();
+            this.cakeItemPnl.SuspendLayout();
+            this.salItemPnl.SuspendLayout();
+            this.accItemPnl.SuspendLayout();
+            this.settingItemPnl.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuPanel
@@ -64,302 +64,312 @@
             this.menuPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.menuPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.menuPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.menuPanel.Controls.Add(this.roundPanel8, 0, 1);
-            this.menuPanel.Controls.Add(this.roundPanel7, 0, 1);
-            this.menuPanel.Controls.Add(this.roundPanel3, 2, 0);
-            this.menuPanel.Controls.Add(this.roundPanel2, 1, 0);
-            this.menuPanel.Controls.Add(this.roundPanel1, 0, 0);
-            this.menuPanel.Controls.Add(this.roundPanel4, 3, 0);
-            this.menuPanel.Controls.Add(this.roundPanel5, 0, 1);
-            this.menuPanel.Controls.Add(this.roundPanel6, 1, 1);
-            this.menuPanel.Location = new System.Drawing.Point(20, 60);
+            this.menuPanel.Controls.Add(this.statisticItemPnl, 0, 1);
+            this.menuPanel.Controls.Add(this.billItemPnl, 0, 1);
+            this.menuPanel.Controls.Add(this.empItemPnl, 2, 0);
+            this.menuPanel.Controls.Add(this.costItemPnl, 1, 0);
+            this.menuPanel.Controls.Add(this.cakeItemPnl, 0, 0);
+            this.menuPanel.Controls.Add(this.salItemPnl, 3, 0);
+            this.menuPanel.Controls.Add(this.accItemPnl, 0, 1);
+            this.menuPanel.Controls.Add(this.settingItemPnl, 1, 1);
+            this.menuPanel.Location = new System.Drawing.Point(15, 49);
+            this.menuPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.menuPanel.Name = "menuPanel";
             this.menuPanel.RowCount = 2;
             this.menuPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.menuPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.menuPanel.Size = new System.Drawing.Size(1160, 580);
+            this.menuPanel.Size = new System.Drawing.Size(920, 471);
             this.menuPanel.TabIndex = 2;
             // 
-            // roundPanel8
+            // statisticItemPnl
             // 
-            this.roundPanel8.BorderColor = System.Drawing.Color.Black;
-            this.roundPanel8.BorderWidth = 0F;
-            this.roundPanel8.ClientRoundScale = 0.1F;
-            this.roundPanel8.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(255)))));
-            this.roundPanel8.Controls.Add(this.label2);
-            this.roundPanel8.Image = global::Bakery.Properties.Resources.statistic;
-            this.roundPanel8.Location = new System.Drawing.Point(600, 310);
-            this.roundPanel8.Margin = new System.Windows.Forms.Padding(20);
-            this.roundPanel8.Name = "roundPanel8";
-            this.roundPanel8.Size = new System.Drawing.Size(250, 250);
-            this.roundPanel8.TabIndex = 19;
+            this.statisticItemPnl.BorderColor = System.Drawing.Color.Black;
+            this.statisticItemPnl.BorderWidth = 0F;
+            this.statisticItemPnl.ClientRoundScale = 0.1F;
+            this.statisticItemPnl.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(255)))));
+            this.statisticItemPnl.Controls.Add(this.transparentLabel7);
+            this.statisticItemPnl.Image = global::Bakery.Properties.Resources.statistic;
+            this.statisticItemPnl.ImageHeight = 0;
+            this.statisticItemPnl.Location = new System.Drawing.Point(475, 248);
+            this.statisticItemPnl.Margin = new System.Windows.Forms.Padding(15, 16, 15, 16);
+            this.statisticItemPnl.Name = "statisticItemPnl";
+            this.statisticItemPnl.Size = new System.Drawing.Size(200, 200);
+            this.statisticItemPnl.TabIndex = 19;
+            this.statisticItemPnl.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MeneItem_MouseDown);
+            this.statisticItemPnl.MouseEnter += new System.EventHandler(this.MenuItem_MouseEnter);
+            this.statisticItemPnl.MouseLeave += new System.EventHandler(this.MenuItem_MouseLeave);
+            this.statisticItemPnl.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MeneItem_MouseUp);
             // 
-            // label2
+            // transparentLabel7
             // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Name = "label2";
-            this.label2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
-            this.label2.Size = new System.Drawing.Size(250, 250);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Thống kê";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.label2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MeneItem_MouseDown);
-            this.label2.MouseEnter += new System.EventHandler(this.MenuItem_MouseEnter);
-            this.label2.MouseLeave += new System.EventHandler(this.MenuItem_MouseLeave);
-            this.label2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MeneItem_MouseUp);
+            this.transparentLabel7.BackColor = System.Drawing.Color.Transparent;
+            this.transparentLabel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.transparentLabel7.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transparentLabel7.ForeColor = System.Drawing.Color.White;
+            this.transparentLabel7.Location = new System.Drawing.Point(0, 0);
+            this.transparentLabel7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.transparentLabel7.Name = "transparentLabel7";
+            this.transparentLabel7.Padding = new System.Windows.Forms.Padding(0, 0, 0, 16);
+            this.transparentLabel7.Size = new System.Drawing.Size(200, 200);
+            this.transparentLabel7.TabIndex = 1;
+            this.transparentLabel7.Text = "Thống kê";
+            this.transparentLabel7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // roundPanel7
+            // billItemPnl
             // 
-            this.roundPanel7.BorderColor = System.Drawing.Color.Black;
-            this.roundPanel7.BorderWidth = 0F;
-            this.roundPanel7.ClientRoundScale = 0.1F;
-            this.roundPanel7.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(255)))));
-            this.roundPanel7.Controls.Add(this.label1);
-            this.roundPanel7.Image = global::Bakery.Properties.Resources.bill;
-            this.roundPanel7.Location = new System.Drawing.Point(310, 310);
-            this.roundPanel7.Margin = new System.Windows.Forms.Padding(20);
-            this.roundPanel7.Name = "roundPanel7";
-            this.roundPanel7.Size = new System.Drawing.Size(250, 250);
-            this.roundPanel7.TabIndex = 18;
+            this.billItemPnl.BorderColor = System.Drawing.Color.Black;
+            this.billItemPnl.BorderWidth = 0F;
+            this.billItemPnl.ClientRoundScale = 0.1F;
+            this.billItemPnl.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(255)))));
+            this.billItemPnl.Controls.Add(this.transparentLabel6);
+            this.billItemPnl.Image = global::Bakery.Properties.Resources.bill;
+            this.billItemPnl.ImageHeight = 0;
+            this.billItemPnl.Location = new System.Drawing.Point(245, 248);
+            this.billItemPnl.Margin = new System.Windows.Forms.Padding(15, 16, 15, 16);
+            this.billItemPnl.Name = "billItemPnl";
+            this.billItemPnl.Size = new System.Drawing.Size(200, 200);
+            this.billItemPnl.TabIndex = 18;
+            this.billItemPnl.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MeneItem_MouseDown);
+            this.billItemPnl.MouseEnter += new System.EventHandler(this.MenuItem_MouseEnter);
+            this.billItemPnl.MouseLeave += new System.EventHandler(this.MenuItem_MouseLeave);
+            this.billItemPnl.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MeneItem_MouseUp);
             // 
-            // label1
+            // transparentLabel6
             // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
-            this.label1.Size = new System.Drawing.Size(250, 250);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Hóa đơn";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.label1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MeneItem_MouseDown);
-            this.label1.MouseEnter += new System.EventHandler(this.MenuItem_MouseEnter);
-            this.label1.MouseLeave += new System.EventHandler(this.MenuItem_MouseLeave);
-            this.label1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MeneItem_MouseUp);
+            this.transparentLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.transparentLabel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.transparentLabel6.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transparentLabel6.ForeColor = System.Drawing.Color.White;
+            this.transparentLabel6.Location = new System.Drawing.Point(0, 0);
+            this.transparentLabel6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.transparentLabel6.Name = "transparentLabel6";
+            this.transparentLabel6.Padding = new System.Windows.Forms.Padding(0, 0, 0, 16);
+            this.transparentLabel6.Size = new System.Drawing.Size(200, 200);
+            this.transparentLabel6.TabIndex = 1;
+            this.transparentLabel6.Text = "Hóa đơn";
+            this.transparentLabel6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // roundPanel3
+            // empItemPnl
             // 
-            this.roundPanel3.BorderColor = System.Drawing.Color.Black;
-            this.roundPanel3.BorderWidth = 0F;
-            this.roundPanel3.ClientRoundScale = 0.1F;
-            this.roundPanel3.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(255)))));
-            this.roundPanel3.Controls.Add(this.empLb);
-            this.roundPanel3.Image = global::Bakery.Properties.Resources.employee;
-            this.roundPanel3.Location = new System.Drawing.Point(600, 20);
-            this.roundPanel3.Margin = new System.Windows.Forms.Padding(20);
-            this.roundPanel3.Name = "roundPanel3";
-            this.roundPanel3.Size = new System.Drawing.Size(250, 250);
-            this.roundPanel3.TabIndex = 14;
+            this.empItemPnl.BorderColor = System.Drawing.Color.Black;
+            this.empItemPnl.BorderWidth = 0F;
+            this.empItemPnl.ClientRoundScale = 0.1F;
+            this.empItemPnl.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(255)))));
+            this.empItemPnl.Controls.Add(this.transparentLabel3);
+            this.empItemPnl.Image = global::Bakery.Properties.Resources.employee;
+            this.empItemPnl.ImageHeight = 0;
+            this.empItemPnl.Location = new System.Drawing.Point(475, 16);
+            this.empItemPnl.Margin = new System.Windows.Forms.Padding(15, 16, 15, 16);
+            this.empItemPnl.Name = "empItemPnl";
+            this.empItemPnl.Size = new System.Drawing.Size(200, 200);
+            this.empItemPnl.TabIndex = 14;
+            this.empItemPnl.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MeneItem_MouseDown);
+            this.empItemPnl.MouseEnter += new System.EventHandler(this.MenuItem_MouseEnter);
+            this.empItemPnl.MouseLeave += new System.EventHandler(this.MenuItem_MouseLeave);
+            this.empItemPnl.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MeneItem_MouseUp);
             // 
-            // empLb
+            // transparentLabel3
             // 
-            this.empLb.BackColor = System.Drawing.Color.Transparent;
-            this.empLb.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.empLb.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.empLb.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.empLb.ForeColor = System.Drawing.Color.White;
-            this.empLb.Location = new System.Drawing.Point(0, 0);
-            this.empLb.Name = "empLb";
-            this.empLb.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
-            this.empLb.Size = new System.Drawing.Size(250, 250);
-            this.empLb.TabIndex = 0;
-            this.empLb.Text = "Nhân viên";
-            this.empLb.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.empLb.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MeneItem_MouseDown);
-            this.empLb.MouseEnter += new System.EventHandler(this.MenuItem_MouseEnter);
-            this.empLb.MouseLeave += new System.EventHandler(this.MenuItem_MouseLeave);
-            this.empLb.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MeneItem_MouseUp);
+            this.transparentLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.transparentLabel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.transparentLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transparentLabel3.ForeColor = System.Drawing.Color.White;
+            this.transparentLabel3.Location = new System.Drawing.Point(0, 0);
+            this.transparentLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.transparentLabel3.Name = "transparentLabel3";
+            this.transparentLabel3.Padding = new System.Windows.Forms.Padding(0, 0, 0, 16);
+            this.transparentLabel3.Size = new System.Drawing.Size(200, 200);
+            this.transparentLabel3.TabIndex = 1;
+            this.transparentLabel3.Text = "Nhân viên";
+            this.transparentLabel3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // roundPanel2
+            // costItemPnl
             // 
-            this.roundPanel2.BorderColor = System.Drawing.Color.Black;
-            this.roundPanel2.BorderWidth = 0F;
-            this.roundPanel2.ClientRoundScale = 0.1F;
-            this.roundPanel2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(255)))));
-            this.roundPanel2.Controls.Add(this.costLb);
-            this.roundPanel2.Image = global::Bakery.Properties.Resources.cost;
-            this.roundPanel2.Location = new System.Drawing.Point(310, 20);
-            this.roundPanel2.Margin = new System.Windows.Forms.Padding(20);
-            this.roundPanel2.Name = "roundPanel2";
-            this.roundPanel2.Size = new System.Drawing.Size(250, 250);
-            this.roundPanel2.TabIndex = 13;
+            this.costItemPnl.BorderColor = System.Drawing.Color.Black;
+            this.costItemPnl.BorderWidth = 0F;
+            this.costItemPnl.ClientRoundScale = 0.1F;
+            this.costItemPnl.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(255)))));
+            this.costItemPnl.Controls.Add(this.transparentLabel2);
+            this.costItemPnl.Image = global::Bakery.Properties.Resources.cost;
+            this.costItemPnl.ImageHeight = 0;
+            this.costItemPnl.Location = new System.Drawing.Point(245, 16);
+            this.costItemPnl.Margin = new System.Windows.Forms.Padding(15, 16, 15, 16);
+            this.costItemPnl.Name = "costItemPnl";
+            this.costItemPnl.Size = new System.Drawing.Size(200, 200);
+            this.costItemPnl.TabIndex = 13;
+            this.costItemPnl.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MeneItem_MouseDown);
+            this.costItemPnl.MouseEnter += new System.EventHandler(this.MenuItem_MouseEnter);
+            this.costItemPnl.MouseLeave += new System.EventHandler(this.MenuItem_MouseLeave);
+            this.costItemPnl.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MeneItem_MouseUp);
             // 
-            // costLb
+            // transparentLabel2
             // 
-            this.costLb.BackColor = System.Drawing.Color.Transparent;
-            this.costLb.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.costLb.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.costLb.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.costLb.ForeColor = System.Drawing.Color.White;
-            this.costLb.Location = new System.Drawing.Point(0, 0);
-            this.costLb.Name = "costLb";
-            this.costLb.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
-            this.costLb.Size = new System.Drawing.Size(250, 250);
-            this.costLb.TabIndex = 0;
-            this.costLb.Text = "Giá";
-            this.costLb.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.costLb.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MeneItem_MouseDown);
-            this.costLb.MouseEnter += new System.EventHandler(this.MenuItem_MouseEnter);
-            this.costLb.MouseLeave += new System.EventHandler(this.MenuItem_MouseLeave);
-            this.costLb.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MeneItem_MouseUp);
+            this.transparentLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.transparentLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.transparentLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transparentLabel2.ForeColor = System.Drawing.Color.White;
+            this.transparentLabel2.Location = new System.Drawing.Point(0, 0);
+            this.transparentLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.transparentLabel2.Name = "transparentLabel2";
+            this.transparentLabel2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 16);
+            this.transparentLabel2.Size = new System.Drawing.Size(200, 200);
+            this.transparentLabel2.TabIndex = 1;
+            this.transparentLabel2.Text = "Giá";
+            this.transparentLabel2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // roundPanel1
+            // cakeItemPnl
             // 
-            this.roundPanel1.BorderColor = System.Drawing.Color.Black;
-            this.roundPanel1.BorderWidth = 0F;
-            this.roundPanel1.ClientRoundScale = 0.1F;
-            this.roundPanel1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(255)))));
-            this.roundPanel1.Controls.Add(this.cakeLb);
-            this.roundPanel1.Image = global::Bakery.Properties.Resources.cake;
-            this.roundPanel1.Location = new System.Drawing.Point(20, 20);
-            this.roundPanel1.Margin = new System.Windows.Forms.Padding(20);
-            this.roundPanel1.Name = "roundPanel1";
-            this.roundPanel1.Size = new System.Drawing.Size(250, 250);
-            this.roundPanel1.TabIndex = 12;
+            this.cakeItemPnl.BorderColor = System.Drawing.Color.Black;
+            this.cakeItemPnl.BorderWidth = 0F;
+            this.cakeItemPnl.ClientRoundScale = 0.1F;
+            this.cakeItemPnl.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(255)))));
+            this.cakeItemPnl.Controls.Add(this.transparentLabel1);
+            this.cakeItemPnl.Image = global::Bakery.Properties.Resources.cake;
+            this.cakeItemPnl.ImageHeight = 0;
+            this.cakeItemPnl.Location = new System.Drawing.Point(15, 16);
+            this.cakeItemPnl.Margin = new System.Windows.Forms.Padding(15, 16, 15, 16);
+            this.cakeItemPnl.Name = "cakeItemPnl";
+            this.cakeItemPnl.Size = new System.Drawing.Size(200, 200);
+            this.cakeItemPnl.TabIndex = 12;
+            this.cakeItemPnl.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MeneItem_MouseDown);
+            this.cakeItemPnl.MouseEnter += new System.EventHandler(this.MenuItem_MouseEnter);
+            this.cakeItemPnl.MouseLeave += new System.EventHandler(this.MenuItem_MouseLeave);
+            this.cakeItemPnl.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MeneItem_MouseUp);
             // 
-            // cakeLb
+            // transparentLabel1
             // 
-            this.cakeLb.BackColor = System.Drawing.Color.Transparent;
-            this.cakeLb.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cakeLb.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cakeLb.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cakeLb.ForeColor = System.Drawing.Color.White;
-            this.cakeLb.Location = new System.Drawing.Point(0, 0);
-            this.cakeLb.Name = "cakeLb";
-            this.cakeLb.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
-            this.cakeLb.Size = new System.Drawing.Size(250, 250);
-            this.cakeLb.TabIndex = 0;
-            this.cakeLb.Text = "Bánh";
-            this.cakeLb.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.cakeLb.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MeneItem_MouseDown);
-            this.cakeLb.MouseEnter += new System.EventHandler(this.MenuItem_MouseEnter);
-            this.cakeLb.MouseLeave += new System.EventHandler(this.MenuItem_MouseLeave);
-            this.cakeLb.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MeneItem_MouseUp);
+            this.transparentLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.transparentLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.transparentLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transparentLabel1.ForeColor = System.Drawing.Color.White;
+            this.transparentLabel1.Location = new System.Drawing.Point(0, 0);
+            this.transparentLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.transparentLabel1.Name = "transparentLabel1";
+            this.transparentLabel1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 16);
+            this.transparentLabel1.Size = new System.Drawing.Size(200, 200);
+            this.transparentLabel1.TabIndex = 0;
+            this.transparentLabel1.Text = "Bánh";
+            this.transparentLabel1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // roundPanel4
+            // salItemPnl
             // 
-            this.roundPanel4.BorderColor = System.Drawing.Color.Black;
-            this.roundPanel4.BorderWidth = 0F;
-            this.roundPanel4.ClientRoundScale = 0.1F;
-            this.roundPanel4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(255)))));
-            this.roundPanel4.Controls.Add(this.salLb);
-            this.roundPanel4.Image = global::Bakery.Properties.Resources.salary;
-            this.roundPanel4.Location = new System.Drawing.Point(890, 20);
-            this.roundPanel4.Margin = new System.Windows.Forms.Padding(20);
-            this.roundPanel4.Name = "roundPanel4";
-            this.roundPanel4.Size = new System.Drawing.Size(250, 250);
-            this.roundPanel4.TabIndex = 15;
+            this.salItemPnl.BorderColor = System.Drawing.Color.Black;
+            this.salItemPnl.BorderWidth = 0F;
+            this.salItemPnl.ClientRoundScale = 0.1F;
+            this.salItemPnl.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(255)))));
+            this.salItemPnl.Controls.Add(this.transparentLabel4);
+            this.salItemPnl.Image = global::Bakery.Properties.Resources.salary;
+            this.salItemPnl.ImageHeight = 0;
+            this.salItemPnl.Location = new System.Drawing.Point(705, 16);
+            this.salItemPnl.Margin = new System.Windows.Forms.Padding(15, 16, 15, 16);
+            this.salItemPnl.Name = "salItemPnl";
+            this.salItemPnl.Size = new System.Drawing.Size(200, 200);
+            this.salItemPnl.TabIndex = 15;
+            this.salItemPnl.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MeneItem_MouseDown);
+            this.salItemPnl.MouseEnter += new System.EventHandler(this.MenuItem_MouseEnter);
+            this.salItemPnl.MouseLeave += new System.EventHandler(this.MenuItem_MouseLeave);
+            this.salItemPnl.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MeneItem_MouseUp);
             // 
-            // salLb
+            // transparentLabel4
             // 
-            this.salLb.BackColor = System.Drawing.Color.Transparent;
-            this.salLb.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.salLb.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.salLb.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.salLb.ForeColor = System.Drawing.Color.White;
-            this.salLb.Location = new System.Drawing.Point(0, 0);
-            this.salLb.Name = "salLb";
-            this.salLb.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
-            this.salLb.Size = new System.Drawing.Size(250, 250);
-            this.salLb.TabIndex = 0;
-            this.salLb.Text = "Lương";
-            this.salLb.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.salLb.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MeneItem_MouseDown);
-            this.salLb.MouseEnter += new System.EventHandler(this.MenuItem_MouseEnter);
-            this.salLb.MouseLeave += new System.EventHandler(this.MenuItem_MouseLeave);
-            this.salLb.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MeneItem_MouseUp);
+            this.transparentLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.transparentLabel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.transparentLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transparentLabel4.ForeColor = System.Drawing.Color.White;
+            this.transparentLabel4.Location = new System.Drawing.Point(0, 0);
+            this.transparentLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.transparentLabel4.Name = "transparentLabel4";
+            this.transparentLabel4.Padding = new System.Windows.Forms.Padding(0, 0, 0, 16);
+            this.transparentLabel4.Size = new System.Drawing.Size(200, 200);
+            this.transparentLabel4.TabIndex = 1;
+            this.transparentLabel4.Text = "Lương";
+            this.transparentLabel4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // roundPanel5
+            // accItemPnl
             // 
-            this.roundPanel5.BorderColor = System.Drawing.Color.Black;
-            this.roundPanel5.BorderWidth = 0F;
-            this.roundPanel5.ClientRoundScale = 0.1F;
-            this.roundPanel5.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(255)))));
-            this.roundPanel5.Controls.Add(this.accLb);
-            this.roundPanel5.Image = global::Bakery.Properties.Resources.account;
-            this.roundPanel5.Location = new System.Drawing.Point(20, 310);
-            this.roundPanel5.Margin = new System.Windows.Forms.Padding(20);
-            this.roundPanel5.Name = "roundPanel5";
-            this.roundPanel5.Size = new System.Drawing.Size(250, 250);
-            this.roundPanel5.TabIndex = 16;
+            this.accItemPnl.BorderColor = System.Drawing.Color.Black;
+            this.accItemPnl.BorderWidth = 0F;
+            this.accItemPnl.ClientRoundScale = 0.1F;
+            this.accItemPnl.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(255)))));
+            this.accItemPnl.Controls.Add(this.transparentLabel5);
+            this.accItemPnl.Image = global::Bakery.Properties.Resources.account;
+            this.accItemPnl.ImageHeight = 0;
+            this.accItemPnl.Location = new System.Drawing.Point(15, 248);
+            this.accItemPnl.Margin = new System.Windows.Forms.Padding(15, 16, 15, 16);
+            this.accItemPnl.Name = "accItemPnl";
+            this.accItemPnl.Size = new System.Drawing.Size(200, 200);
+            this.accItemPnl.TabIndex = 16;
+            this.accItemPnl.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MeneItem_MouseDown);
+            this.accItemPnl.MouseEnter += new System.EventHandler(this.MenuItem_MouseEnter);
+            this.accItemPnl.MouseLeave += new System.EventHandler(this.MenuItem_MouseLeave);
+            this.accItemPnl.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MeneItem_MouseUp);
             // 
-            // accLb
+            // transparentLabel5
             // 
-            this.accLb.BackColor = System.Drawing.Color.Transparent;
-            this.accLb.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.accLb.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.accLb.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accLb.ForeColor = System.Drawing.Color.White;
-            this.accLb.Location = new System.Drawing.Point(0, 0);
-            this.accLb.Name = "accLb";
-            this.accLb.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
-            this.accLb.Size = new System.Drawing.Size(250, 250);
-            this.accLb.TabIndex = 0;
-            this.accLb.Text = "Tài khoản";
-            this.accLb.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.accLb.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MeneItem_MouseDown);
-            this.accLb.MouseEnter += new System.EventHandler(this.MenuItem_MouseEnter);
-            this.accLb.MouseLeave += new System.EventHandler(this.MenuItem_MouseLeave);
-            this.accLb.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MeneItem_MouseUp);
+            this.transparentLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.transparentLabel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.transparentLabel5.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transparentLabel5.ForeColor = System.Drawing.Color.White;
+            this.transparentLabel5.Location = new System.Drawing.Point(0, 0);
+            this.transparentLabel5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.transparentLabel5.Name = "transparentLabel5";
+            this.transparentLabel5.Padding = new System.Windows.Forms.Padding(0, 0, 0, 16);
+            this.transparentLabel5.Size = new System.Drawing.Size(200, 200);
+            this.transparentLabel5.TabIndex = 1;
+            this.transparentLabel5.Text = "Tài khoản";
+            this.transparentLabel5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // roundPanel6
+            // settingItemPnl
             // 
-            this.roundPanel6.BorderColor = System.Drawing.Color.Black;
-            this.roundPanel6.BorderWidth = 0F;
-            this.roundPanel6.ClientRoundScale = 0.1F;
-            this.roundPanel6.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(255)))));
-            this.roundPanel6.Controls.Add(this.billLb);
-            this.roundPanel6.Image = global::Bakery.Properties.Resources.setting;
-            this.roundPanel6.Location = new System.Drawing.Point(890, 310);
-            this.roundPanel6.Margin = new System.Windows.Forms.Padding(20);
-            this.roundPanel6.Name = "roundPanel6";
-            this.roundPanel6.Size = new System.Drawing.Size(250, 250);
-            this.roundPanel6.TabIndex = 17;
+            this.settingItemPnl.BorderColor = System.Drawing.Color.Black;
+            this.settingItemPnl.BorderWidth = 0F;
+            this.settingItemPnl.ClientRoundScale = 0.1F;
+            this.settingItemPnl.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(255)))));
+            this.settingItemPnl.Controls.Add(this.transparentLabel8);
+            this.settingItemPnl.Image = global::Bakery.Properties.Resources.setting;
+            this.settingItemPnl.ImageHeight = 0;
+            this.settingItemPnl.Location = new System.Drawing.Point(705, 248);
+            this.settingItemPnl.Margin = new System.Windows.Forms.Padding(15, 16, 15, 16);
+            this.settingItemPnl.Name = "settingItemPnl";
+            this.settingItemPnl.Size = new System.Drawing.Size(200, 200);
+            this.settingItemPnl.TabIndex = 17;
+            this.settingItemPnl.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MeneItem_MouseDown);
+            this.settingItemPnl.MouseEnter += new System.EventHandler(this.MenuItem_MouseEnter);
+            this.settingItemPnl.MouseLeave += new System.EventHandler(this.MenuItem_MouseLeave);
+            this.settingItemPnl.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MeneItem_MouseUp);
             // 
-            // billLb
+            // transparentLabel8
             // 
-            this.billLb.BackColor = System.Drawing.Color.Transparent;
-            this.billLb.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.billLb.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.billLb.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.billLb.ForeColor = System.Drawing.Color.White;
-            this.billLb.Location = new System.Drawing.Point(0, 0);
-            this.billLb.Name = "billLb";
-            this.billLb.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
-            this.billLb.Size = new System.Drawing.Size(250, 250);
-            this.billLb.TabIndex = 0;
-            this.billLb.Text = "Cài đặt";
-            this.billLb.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.billLb.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MeneItem_MouseDown);
-            this.billLb.MouseEnter += new System.EventHandler(this.MenuItem_MouseEnter);
-            this.billLb.MouseLeave += new System.EventHandler(this.MenuItem_MouseLeave);
-            this.billLb.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MeneItem_MouseUp);
+            this.transparentLabel8.BackColor = System.Drawing.Color.Transparent;
+            this.transparentLabel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.transparentLabel8.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transparentLabel8.ForeColor = System.Drawing.Color.White;
+            this.transparentLabel8.Location = new System.Drawing.Point(0, 0);
+            this.transparentLabel8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.transparentLabel8.Name = "transparentLabel8";
+            this.transparentLabel8.Padding = new System.Windows.Forms.Padding(0, 0, 0, 16);
+            this.transparentLabel8.Size = new System.Drawing.Size(200, 200);
+            this.transparentLabel8.TabIndex = 1;
+            this.transparentLabel8.Text = "Cài đặt";
+            this.transparentLabel8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // ManagerPanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.Controls.Add(this.menuPanel);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ManagerPanel";
-            this.Size = new System.Drawing.Size(1200, 700);
+            this.Size = new System.Drawing.Size(900, 569);
             this.menuPanel.ResumeLayout(false);
-            this.roundPanel8.ResumeLayout(false);
-            this.roundPanel7.ResumeLayout(false);
-            this.roundPanel3.ResumeLayout(false);
-            this.roundPanel2.ResumeLayout(false);
-            this.roundPanel1.ResumeLayout(false);
-            this.roundPanel4.ResumeLayout(false);
-            this.roundPanel5.ResumeLayout(false);
-            this.roundPanel6.ResumeLayout(false);
+            this.statisticItemPnl.ResumeLayout(false);
+            this.billItemPnl.ResumeLayout(false);
+            this.empItemPnl.ResumeLayout(false);
+            this.costItemPnl.ResumeLayout(false);
+            this.cakeItemPnl.ResumeLayout(false);
+            this.salItemPnl.ResumeLayout(false);
+            this.accItemPnl.ResumeLayout(false);
+            this.settingItemPnl.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -368,21 +378,21 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel menuPanel;
-        private RoundPanel roundPanel4;
-        private System.Windows.Forms.Label salLb;
-        private RoundPanel roundPanel3;
-        private System.Windows.Forms.Label empLb;
-        private RoundPanel roundPanel2;
-        private System.Windows.Forms.Label costLb;
-        private RoundPanel roundPanel1;
-        private System.Windows.Forms.Label cakeLb;
-        private RoundPanel roundPanel6;
-        private System.Windows.Forms.Label billLb;
-        private RoundPanel roundPanel5;
-        private System.Windows.Forms.Label accLb;
-        private RoundPanel roundPanel7;
-        private System.Windows.Forms.Label label1;
-        private RoundPanel roundPanel8;
-        private System.Windows.Forms.Label label2;
+        private RoundPanel salItemPnl;
+        private RoundPanel empItemPnl;
+        private RoundPanel costItemPnl;
+        private RoundPanel cakeItemPnl;
+        private RoundPanel settingItemPnl;
+        private RoundPanel accItemPnl;
+        private RoundPanel billItemPnl;
+        private RoundPanel statisticItemPnl;
+        private TransparentLabel transparentLabel7;
+        private TransparentLabel transparentLabel6;
+        private TransparentLabel transparentLabel3;
+        private TransparentLabel transparentLabel2;
+        private TransparentLabel transparentLabel1;
+        private TransparentLabel transparentLabel4;
+        private TransparentLabel transparentLabel5;
+        private TransparentLabel transparentLabel8;
     }
 }
