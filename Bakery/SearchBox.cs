@@ -48,14 +48,14 @@ namespace Bakery
 
         private void SearchBtn_Click(object sender, EventArgs e)
         {
-            OnSearch(e);
+            OnSearch(null);
         }
 
         private void SearchTxt_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
-                OnSearch(e);
+                OnSearch(null);
             }
         }
 

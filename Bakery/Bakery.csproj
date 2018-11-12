@@ -46,17 +46,171 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccessDb\AccessDb.cs" />
+    <Compile Include="AccountInfoPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AccountInfoPanel.Designer.cs">
+      <DependentUpon>AccountInfoPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AccountItem.Designer.cs">
+      <DependentUpon>AccountItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AccountPanel.Designer.cs">
+      <DependentUpon>AccountPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActCakeItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ActCakeItem.Designer.cs">
+      <DependentUpon>ActCakeItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActCakePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ActCakePanel.Designer.cs">
+      <DependentUpon>ActCakePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEditAccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEditAccountForm.Designer.cs">
+      <DependentUpon>AddEditAccountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BillDetailItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BillDetailItem.Designer.cs">
+      <DependentUpon>BillDetailItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BillInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillInfoForm.Designer.cs">
+      <DependentUpon>BillInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BillItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BillItem.Designer.cs">
+      <DependentUpon>BillItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BillPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BillPanel.Designer.cs">
+      <DependentUpon>BillPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CakeInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CakeInfoForm.Designer.cs">
+      <DependentUpon>CakeInfoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CakeItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="CakeItem.Designer.cs">
       <DependentUpon>CakeItem.cs</DependentUpon>
     </Compile>
-    <Compile Include="CakeSalePanel.cs">
+    <Compile Include="CakePanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CakeSalePanel.Designer.cs">
-      <DependentUpon>CakeSalePanel.cs</DependentUpon>
+    <Compile Include="CakePanel.Designer.cs">
+      <DependentUpon>CakePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeInfoForm.Designer.cs">
+      <DependentUpon>EmployeeInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EmployeeItem.Designer.cs">
+      <DependentUpon>EmployeeItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EmployeePanel.Designer.cs">
+      <DependentUpon>EmployeePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeShortItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EmployeeShortItem.Designer.cs">
+      <DependentUpon>EmployeeShortItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HandleData\BillData.cs" />
+    <Compile Include="HandleData\BillDetailData.cs" />
+    <Compile Include="HandleData\EmployeeData.cs" />
+    <Compile Include="HandleData\SalaryData.cs" />
+    <Compile Include="HandleData\StatisticData.cs" />
+    <Compile Include="InactCakeItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InactCakeItem.Designer.cs">
+      <DependentUpon>InactCakeItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InactCakePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InactCakePanel.Designer.cs">
+      <DependentUpon>InactCakePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertSalaryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertSalaryForm.Designer.cs">
+      <DependentUpon>InsertSalaryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertSalaryItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InsertSalaryItem.Designer.cs">
+      <DependentUpon>InsertSalaryItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageForm.Designer.cs">
+      <DependentUpon>ManageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManagePanel.Designer.cs">
+      <DependentUpon>ManagePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MappingModel\Bill.cs" />
+    <Compile Include="MappingModel\BillDetail.cs" />
+    <Compile Include="MappingModel\EmployeeSalary.cs" />
+    <Compile Include="MappingModel\Salary.cs" />
+    <Compile Include="MappingModel\Statistic.cs" />
+    <Compile Include="SalaryItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SalaryItem.Designer.cs">
+      <DependentUpon>SalaryItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalaryPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SalaryPanel.Designer.cs">
+      <DependentUpon>SalaryPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SalePanel.Designer.cs">
+      <DependentUpon>SalePanel.cs</DependentUpon>
     </Compile>
     <Compile Include="EventList.cs" />
     <Compile Include="FlowLayoutPanel.cs">
@@ -64,12 +218,6 @@
     </Compile>
     <Compile Include="FlowLayoutPanel.Designer.cs">
       <DependentUpon>FlowLayoutPanel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ManagerPanel.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ManagerPanel.Designer.cs">
-      <DependentUpon>ManagerPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="CircularButton.cs">
       <SubType>Component</SubType>
@@ -129,23 +277,29 @@
     <Compile Include="SaleForm.Designer.cs">
       <DependentUpon>SaleForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="SalePanel.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="SalePanel.Designer.cs">
-      <DependentUpon>SalePanel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SalePanel1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="SalePanel1.Designer.cs">
-      <DependentUpon>SalePanel1.cs</DependentUpon>
-    </Compile>
     <Compile Include="SearchBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="SearchBox.Designer.cs">
       <DependentUpon>SearchBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StatisticItem.Designer.cs">
+      <DependentUpon>StatisticItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StatisticPanel.Designer.cs">
+      <DependentUpon>StatisticPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransparentCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TransparentCheckBox.Designer.cs">
+      <DependentUpon>TransparentCheckBox.cs</DependentUpon>
     </Compile>
     <Compile Include="TransparentLabel.cs">
       <SubType>Component</SubType>
@@ -153,14 +307,95 @@
     <Compile Include="TransparentLabel.Designer.cs">
       <DependentUpon>TransparentLabel.cs</DependentUpon>
     </Compile>
+    <Compile Include="TransparentRoundButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TransparentRoundButton.Designer.cs">
+      <DependentUpon>TransparentRoundButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateSalaryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateSalaryForm.Designer.cs">
+      <DependentUpon>UpdateSalaryForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AccountInfoPanel.resx">
+      <DependentUpon>AccountInfoPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountItem.resx">
+      <DependentUpon>AccountItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountPanel.resx">
+      <DependentUpon>AccountPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActCakeItem.resx">
+      <DependentUpon>ActCakeItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActCakePanel.resx">
+      <DependentUpon>ActCakePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEditAccountForm.resx">
+      <DependentUpon>AddEditAccountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BillDetailItem.resx">
+      <DependentUpon>BillDetailItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BillInfoForm.resx">
+      <DependentUpon>BillInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BillItem.resx">
+      <DependentUpon>BillItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BillPanel.resx">
+      <DependentUpon>BillPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CakeInfoForm.resx">
+      <DependentUpon>CakeInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CakeItem.resx">
       <DependentUpon>CakeItem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CakeSalePanel.resx">
-      <DependentUpon>CakeSalePanel.cs</DependentUpon>
+    <EmbeddedResource Include="CakePanel.resx">
+      <DependentUpon>CakePanel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManagerPanel.resx">
-      <DependentUpon>ManagerPanel.cs</DependentUpon>
+    <EmbeddedResource Include="EmployeeInfoForm.resx">
+      <DependentUpon>EmployeeInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeItem.resx">
+      <DependentUpon>EmployeeItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeePanel.resx">
+      <DependentUpon>EmployeePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeShortItem.resx">
+      <DependentUpon>EmployeeShortItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InactCakeItem.resx">
+      <DependentUpon>InactCakeItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InactCakePanel.resx">
+      <DependentUpon>InactCakePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertSalaryForm.resx">
+      <DependentUpon>InsertSalaryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertSalaryItem.resx">
+      <DependentUpon>InsertSalaryItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageForm.resx">
+      <DependentUpon>ManageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagePanel.resx">
+      <DependentUpon>ManagePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalaryItem.resx">
+      <DependentUpon>SalaryItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalaryPanel.resx">
+      <DependentUpon>SalaryPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalePanel.resx">
+      <DependentUpon>SalePanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -187,11 +422,17 @@
     <EmbeddedResource Include="SaleForm.resx">
       <DependentUpon>SaleForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SalePanel1.resx">
-      <DependentUpon>SalePanel1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="SearchBox.resx">
       <DependentUpon>SearchBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticItem.resx">
+      <DependentUpon>StatisticItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticPanel.resx">
+      <DependentUpon>StatisticPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateSalaryForm.resx">
+      <DependentUpon>UpdateSalaryForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -210,9 +451,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Lock.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\User.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Open.png" />
@@ -257,12 +495,6 @@
     <None Include="Resources\setting.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\cake_small.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cart_small.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\exit_small.PNG" />
   </ItemGroup>
   <ItemGroup>
@@ -291,6 +523,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\garbagebin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cake_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Right.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee_info.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

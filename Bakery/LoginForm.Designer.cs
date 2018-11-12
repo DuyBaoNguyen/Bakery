@@ -31,13 +31,13 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.loginBtn = new Bakery.RoundButton();
             this.loadPtb = new System.Windows.Forms.PictureBox();
-            this.roundPanel1 = new Bakery.RoundPanel();
+            this.serverPnl = new Bakery.RoundPanel();
             this.serverTxt = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.roundPanel2 = new Bakery.RoundPanel();
+            this.loginNamePnl = new Bakery.RoundPanel();
             this.usernameTxt = new System.Windows.Forms.TextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.roundPanel3 = new Bakery.RoundPanel();
+            this.passwordPnl = new Bakery.RoundPanel();
             this.passwordTxt = new System.Windows.Forms.TextBox();
             this.viewBtn = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -47,17 +47,18 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.functionCmb = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.functionPnl = new Bakery.RoundPanel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.loadPtb)).BeginInit();
-            this.roundPanel1.SuspendLayout();
+            this.serverPnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.roundPanel2.SuspendLayout();
+            this.loginNamePnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.roundPanel3.SuspendLayout();
+            this.passwordPnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.viewBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.functionPnl.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -111,32 +112,32 @@
             this.loadPtb.TabStop = false;
             this.loadPtb.Visible = false;
             // 
-            // roundPanel1
+            // serverPnl
             // 
-            this.roundPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.serverPnl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.roundPanel1.BorderWidth = 2F;
-            this.roundPanel1.ClientRoundScale = 0.25F;
-            this.roundPanel1.Color = System.Drawing.Color.White;
-            this.roundPanel1.Controls.Add(this.serverTxt);
-            this.roundPanel1.Controls.Add(this.pictureBox1);
-            this.roundPanel1.Image = null;
-            this.roundPanel1.ImageHeight = 0;
-            this.roundPanel1.Location = new System.Drawing.Point(9, 65);
-            this.roundPanel1.Margin = new System.Windows.Forms.Padding(2);
-            this.roundPanel1.Name = "roundPanel1";
-            this.roundPanel1.Size = new System.Drawing.Size(320, 36);
-            this.roundPanel1.TabIndex = 20;
+            this.serverPnl.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.serverPnl.BorderWidth = 2F;
+            this.serverPnl.ClientRoundScale = 0.25F;
+            this.serverPnl.Color = System.Drawing.Color.White;
+            this.serverPnl.Controls.Add(this.serverTxt);
+            this.serverPnl.Controls.Add(this.pictureBox1);
+            this.serverPnl.Image = null;
+            this.serverPnl.ImageHeight = 0;
+            this.serverPnl.Location = new System.Drawing.Point(9, 65);
+            this.serverPnl.Margin = new System.Windows.Forms.Padding(2);
+            this.serverPnl.Name = "serverPnl";
+            this.serverPnl.Size = new System.Drawing.Size(320, 36);
+            this.serverPnl.TabIndex = 20;
             // 
             // serverTxt
             // 
             this.serverTxt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.serverTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.serverTxt.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.serverTxt.Location = new System.Drawing.Point(40, 7);
+            this.serverTxt.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.serverTxt.Location = new System.Drawing.Point(40, 8);
             this.serverTxt.Name = "serverTxt";
-            this.serverTxt.Size = new System.Drawing.Size(276, 22);
+            this.serverTxt.Size = new System.Drawing.Size(277, 20);
             this.serverTxt.TabIndex = 2;
             this.serverTxt.Text = global::Bakery.Properties.Settings.Default.ServerName;
             this.serverTxt.TextChanged += new System.EventHandler(this.ServerTxt_TextChanged);
@@ -154,40 +155,39 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // roundPanel2
+            // loginNamePnl
             // 
-            this.roundPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.loginNamePnl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundPanel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.roundPanel2.BorderWidth = 2F;
-            this.roundPanel2.ClientRoundScale = 0.25F;
-            this.roundPanel2.Color = System.Drawing.Color.White;
-            this.roundPanel2.Controls.Add(this.usernameTxt);
-            this.roundPanel2.Controls.Add(this.pictureBox4);
-            this.roundPanel2.Image = null;
-            this.roundPanel2.ImageHeight = 0;
-            this.roundPanel2.Location = new System.Drawing.Point(9, 139);
-            this.roundPanel2.Margin = new System.Windows.Forms.Padding(2);
-            this.roundPanel2.Name = "roundPanel2";
-            this.roundPanel2.Size = new System.Drawing.Size(320, 36);
-            this.roundPanel2.TabIndex = 21;
+            this.loginNamePnl.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.loginNamePnl.BorderWidth = 2F;
+            this.loginNamePnl.ClientRoundScale = 0.25F;
+            this.loginNamePnl.Color = System.Drawing.Color.White;
+            this.loginNamePnl.Controls.Add(this.usernameTxt);
+            this.loginNamePnl.Controls.Add(this.pictureBox4);
+            this.loginNamePnl.Image = null;
+            this.loginNamePnl.ImageHeight = 0;
+            this.loginNamePnl.Location = new System.Drawing.Point(9, 139);
+            this.loginNamePnl.Margin = new System.Windows.Forms.Padding(2);
+            this.loginNamePnl.Name = "loginNamePnl";
+            this.loginNamePnl.Size = new System.Drawing.Size(320, 36);
+            this.loginNamePnl.TabIndex = 21;
             // 
             // usernameTxt
             // 
             this.usernameTxt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.usernameTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.usernameTxt.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameTxt.Location = new System.Drawing.Point(40, 7);
+            this.usernameTxt.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameTxt.Location = new System.Drawing.Point(40, 8);
             this.usernameTxt.Name = "usernameTxt";
-            this.usernameTxt.Size = new System.Drawing.Size(276, 22);
+            this.usernameTxt.Size = new System.Drawing.Size(276, 20);
             this.usernameTxt.TabIndex = 3;
-            this.usernameTxt.Text = "emp1";
             // 
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox4.Image = global::Bakery.Properties.Resources.User;
+            this.pictureBox4.Image = global::Bakery.Properties.Resources.user_small;
             this.pictureBox4.Location = new System.Drawing.Point(0, 0);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
@@ -196,35 +196,34 @@
             this.pictureBox4.TabIndex = 1;
             this.pictureBox4.TabStop = false;
             // 
-            // roundPanel3
+            // passwordPnl
             // 
-            this.roundPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.passwordPnl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundPanel3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.roundPanel3.BorderWidth = 2F;
-            this.roundPanel3.ClientRoundScale = 0.25F;
-            this.roundPanel3.Color = System.Drawing.Color.White;
-            this.roundPanel3.Controls.Add(this.passwordTxt);
-            this.roundPanel3.Controls.Add(this.viewBtn);
-            this.roundPanel3.Controls.Add(this.pictureBox2);
-            this.roundPanel3.Image = null;
-            this.roundPanel3.ImageHeight = 0;
-            this.roundPanel3.Location = new System.Drawing.Point(9, 213);
-            this.roundPanel3.Margin = new System.Windows.Forms.Padding(2);
-            this.roundPanel3.Name = "roundPanel3";
-            this.roundPanel3.Size = new System.Drawing.Size(320, 36);
-            this.roundPanel3.TabIndex = 22;
+            this.passwordPnl.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.passwordPnl.BorderWidth = 2F;
+            this.passwordPnl.ClientRoundScale = 0.25F;
+            this.passwordPnl.Color = System.Drawing.Color.White;
+            this.passwordPnl.Controls.Add(this.passwordTxt);
+            this.passwordPnl.Controls.Add(this.viewBtn);
+            this.passwordPnl.Controls.Add(this.pictureBox2);
+            this.passwordPnl.Image = null;
+            this.passwordPnl.ImageHeight = 0;
+            this.passwordPnl.Location = new System.Drawing.Point(9, 213);
+            this.passwordPnl.Margin = new System.Windows.Forms.Padding(2);
+            this.passwordPnl.Name = "passwordPnl";
+            this.passwordPnl.Size = new System.Drawing.Size(320, 36);
+            this.passwordPnl.TabIndex = 22;
             // 
             // passwordTxt
             // 
             this.passwordTxt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.passwordTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.passwordTxt.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordTxt.Location = new System.Drawing.Point(40, 7);
+            this.passwordTxt.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordTxt.Location = new System.Drawing.Point(40, 8);
             this.passwordTxt.Name = "passwordTxt";
-            this.passwordTxt.Size = new System.Drawing.Size(240, 22);
+            this.passwordTxt.Size = new System.Drawing.Size(240, 20);
             this.passwordTxt.TabIndex = 24;
-            this.passwordTxt.Text = "123456";
             this.passwordTxt.UseSystemPasswordChar = true;
             this.passwordTxt.TextChanged += new System.EventHandler(this.PasswordTxt_TextChanged);
             // 
@@ -260,20 +259,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(5, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 21);
+            this.label1.Size = new System.Drawing.Size(50, 20);
             this.label1.TabIndex = 23;
             this.label1.Text = "Server";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(5, 116);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 21);
+            this.label2.Size = new System.Drawing.Size(87, 20);
             this.label2.TabIndex = 24;
             this.label2.Text = "Login name";
             // 
@@ -302,36 +301,25 @@
             this.functionCmb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.functionCmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.functionCmb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.functionCmb.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.functionCmb.FormattingEnabled = true;
             this.functionCmb.Items.AddRange(new object[] {
             "Bán hàng",
             "Quản lý"});
-            this.functionCmb.Location = new System.Drawing.Point(95, 302);
+            this.functionCmb.Location = new System.Drawing.Point(5, 5);
             this.functionCmb.Name = "functionCmb";
-            this.functionCmb.Size = new System.Drawing.Size(234, 29);
+            this.functionCmb.Size = new System.Drawing.Size(311, 27);
             this.functionCmb.TabIndex = 26;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(5, 305);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(5, 262);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 21);
+            this.label4.Size = new System.Drawing.Size(79, 20);
             this.label4.TabIndex = 27;
             this.label4.Text = "Chức năng";
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(9, 268);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(131, 21);
-            this.checkBox1.TabIndex = 28;
-            this.checkBox1.Text = "Nhớ tên tài khoản";
-            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
@@ -344,6 +332,23 @@
             this.label5.TabIndex = 29;
             this.label5.Text = "Đăng nhập";
             // 
+            // functionPnl
+            // 
+            this.functionPnl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.functionPnl.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.functionPnl.BorderWidth = 2F;
+            this.functionPnl.ClientRoundScale = 0.25F;
+            this.functionPnl.Color = System.Drawing.Color.White;
+            this.functionPnl.Controls.Add(this.functionCmb);
+            this.functionPnl.Image = null;
+            this.functionPnl.ImageHeight = 0;
+            this.functionPnl.Location = new System.Drawing.Point(9, 284);
+            this.functionPnl.Margin = new System.Windows.Forms.Padding(2);
+            this.functionPnl.Name = "functionPnl";
+            this.functionPnl.Size = new System.Drawing.Size(320, 36);
+            this.functionPnl.TabIndex = 30;
+            // 
             // LoginForm
             // 
             this.AcceptButton = this.loginBtn;
@@ -351,16 +356,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(338, 383);
+            this.Controls.Add(this.functionPnl);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.functionCmb);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.roundPanel3);
-            this.Controls.Add(this.roundPanel2);
-            this.Controls.Add(this.roundPanel1);
+            this.Controls.Add(this.passwordPnl);
+            this.Controls.Add(this.loginNamePnl);
+            this.Controls.Add(this.serverPnl);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -372,16 +376,17 @@
             this.Load += new System.EventHandler(this.ConnectServerForm_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.loadPtb)).EndInit();
-            this.roundPanel1.ResumeLayout(false);
-            this.roundPanel1.PerformLayout();
+            this.serverPnl.ResumeLayout(false);
+            this.serverPnl.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.roundPanel2.ResumeLayout(false);
-            this.roundPanel2.PerformLayout();
+            this.loginNamePnl.ResumeLayout(false);
+            this.loginNamePnl.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.roundPanel3.ResumeLayout(false);
-            this.roundPanel3.PerformLayout();
+            this.passwordPnl.ResumeLayout(false);
+            this.passwordPnl.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.viewBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.functionPnl.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -391,10 +396,10 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox loadPtb;
-        private RoundPanel roundPanel1;
-        private RoundPanel roundPanel2;
+        private RoundPanel serverPnl;
+        private RoundPanel loginNamePnl;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private RoundPanel roundPanel3;
+        private RoundPanel passwordPnl;
         private System.Windows.Forms.PictureBox viewBtn;
         private System.Windows.Forms.PictureBox pictureBox2;
         private RoundButton loginBtn;
@@ -407,8 +412,8 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ComboBox functionCmb;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label5;
+        private RoundPanel functionPnl;
     }
 }
 

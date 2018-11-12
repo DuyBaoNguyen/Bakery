@@ -19,11 +19,20 @@ namespace Bakery
 
         public void RemoveAt(int index)
         {
+            base.RemoveAt(index);
             if (OnRemove != null)
             {
                 OnRemove(this, null);
             }
-            base.RemoveAt(index);
+        }
+
+        public void Clear()
+        {
+            base.Clear();
+            if (OnRemove != null)
+            {
+                OnRemove(this, null);
+            }
         }
     }
 }

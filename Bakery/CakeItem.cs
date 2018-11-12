@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 using Bakery.MappingModel;
+using Bakery.Other;
 
 namespace Bakery
 {
@@ -24,7 +25,7 @@ namespace Bakery
                 {
                     container.Image = data.Image;
                     cakeNameLb.Text = data.Name;
-                    cakeCostLb.Text = data.Cost.ToString();
+                    cakeCostLb.Text = data.Cost.ToString().ConvertToMoney();
                 }
                 else
                 {
@@ -77,7 +78,5 @@ namespace Bakery
             orderCakeForm.Data = data;
             orderCakeForm.ShowDialog();
         }
-
-
     }
 }

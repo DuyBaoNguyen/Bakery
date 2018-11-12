@@ -33,12 +33,16 @@ namespace Bakery
 
             loginBtn.Enabled = false;
             loadPtb.Visible = true;
+            serverPnl.Enabled = false;
+            loginNamePnl.Enabled = false;
+            passwordPnl.Enabled = false;
+            functionPnl.Enabled = false;
 
             await Task.Run(() =>
             {
                 Properties.Settings.Default.ServerName = serverTxt.Text;
-                AccessDb.AccessDb.LoginName = usernameTxt.Text;
-                AccessDb.AccessDb.Password = passwordTxt.Text;
+                Properties.Settings.Default.Username = usernameTxt.Text;
+                Properties.Settings.Default.Password = passwordTxt.Text;
                 if (AccessDb.AccessDb.Instance.ConnectDatabase())
                 {
                     Properties.Settings.Default.SuccessfullAccess = true;
@@ -52,21 +56,25 @@ namespace Bakery
 
             loadPtb.Visible = false;
             loginBtn.Enabled = true;
+            serverPnl.Enabled = true;
+            loginNamePnl.Enabled = true;
+            passwordPnl.Enabled = true;
+            functionPnl.Enabled = true;
 
             if (Properties.Settings.Default.SuccessfullAccess)
             {
                 this.Hide();
-
-                Account acc = AccountData.Instance.GetAccount(usernameTxt.Text);
+                
                 this.Hide();
                 if (functionCmb.Text == "Bán hàng")
                 {
-                    Form form = new SaleForm();
+                    Account acc = AccountData.Instance.GetAccount(usernameTxt.Text);
+                    Form form = new SaleForm(acc);
                     form.ShowDialog();
                 }
                 else
                 {
-                    Form form = new SaleForm();
+                    Form form = new ManageForm();
                     form.ShowDialog();
                 }
 

@@ -116,6 +116,7 @@
             0,
             0,
             0});
+            this.amoutCakeNud.ValueChanged += new System.EventHandler(this.AmoutCakeNud_ValueChanged);
             // 
             // deleteBtn
             // 
@@ -138,6 +139,7 @@
             this.deleteBtn.Size = new System.Drawing.Size(50, 50);
             this.deleteBtn.TabIndex = 1;
             this.deleteBtn.UseVisualStyleBackColor = false;
+            this.deleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
             // 
             // OrderItem
             // 

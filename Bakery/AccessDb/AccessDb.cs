@@ -25,10 +25,10 @@ namespace Bakery.AccessDb
 
         private string GetConnectionString()
         {
-            //return @"Data Source=" + Properties.Settings.Default.ServerName + 
-            //        ";Initial Catalog=QuanLyTiemBanh;Integrated Security=SSPI" +
-            //        ";User ID=" + LoginName + ";Password= " + Password + ";";
-            return @"Server = " + Properties.Settings.Default.ServerName + ";Database = QuanLyTiemBanh; User Id = " + LoginName + "; Password = " + Password + ";";
+            return @"Server = " + Properties.Settings.Default.ServerName + 
+                    ";Database = QuanLyTiemBanh" +
+                    ";User Id = " + Properties.Settings.Default.Username + 
+                    ";Password = " + Properties.Settings.Default.Password + ";";
         }
 
         public bool ConnectDatabase()
@@ -56,36 +56,52 @@ namespace Bakery.AccessDb
             }
         }
 
-        public DataTable GetData(string query, SqlParameter[] sqlParas)
+        public DataSet GetData(string query, SqlParameter[] sqlParas, ref string error)
         {
             SqlConnection con = new SqlConnection(GetConnectionString());
             SqlCommand com = new SqlCommand(query, con);
             SqlDataAdapter da = new SqlDataAdapter(com);
-            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
 
             com.Parameters.AddRange(sqlParas);
-            
-            if (con.State != ConnectionState.Open)
-            {
-                con.Open();
-            }
 
-            da.Fill(dt);
+            try
+            {
+                if (con.State != ConnectionState.Open)
+                {
+                    con.Open();
+                }
 
-            con.Close();
-            if (con != null)
-            {
-                con.Dispose();
+                da.Fill(ds);
+                con.Close();
             }
-            if (com != null)
+            catch (SqlException e)
             {
-                com.Dispose();
+                if (e.Class == 16 && e.State == 1)
+                {
+                    error = e.Message;
+                }
+                else
+                {
+                    error = "Đã có lỗi xảy ra hoặc bạn không được quyền truy xuất dữ liệu này!";
+                }
             }
-            if (da != null)
+            finally
             {
-                da.Dispose();
+                if (con != null)
+                {
+                    con.Dispose();
+                }
+                if (com != null)
+                {
+                    com.Dispose();
+                }
+                if (da != null)
+                {
+                    da.Dispose();
+                }
             }
-            return dt;
+            return ds;
         }
 
         public bool ExcuteQuery(string query, SqlParameter[] sqlParas, ref string error)
@@ -102,9 +118,55 @@ namespace Bakery.AccessDb
                 com.ExecuteNonQuery();
                 return true;
             }
-            catch (SqlException ex)
+            catch (SqlException e)
             {
-                error = ex.Message;
+                if (e.Class == 16 && e.State == 1)
+                {
+                    error = e.Message;
+                }
+                else
+                {
+                    error = "Đã có lỗi xảy ra hoặc bạn không được quyền truy xuất dữ liệu này!";
+                }
+                return false;
+            }
+            finally
+            {
+                con.Close();
+                if (con != null)
+                {
+                    con.Dispose();
+                }
+                if (com != null)
+                {
+                    com.Dispose();
+                }
+            }
+        }
+
+        public object ExcuteScalar(string query, SqlParameter[] sqlParas, ref string error)
+        {
+            SqlConnection con = new SqlConnection(GetConnectionString());
+            SqlCommand com = new SqlCommand(query, con);
+            com.Parameters.AddRange(sqlParas);
+            try
+            {
+                if (con.State != ConnectionState.Open)
+                {
+                    con.Open();
+                }
+                return com.ExecuteScalar();
+            }
+            catch (SqlException e)
+            {
+                if (e.Class == 16 && e.State == 1)
+                {
+                    error = e.Message;
+                }
+                else
+                {
+                    error = "Đã có lỗi xảy ra hoặc bạn không được quyền truy xuất dữ liệu này!";
+                }
                 return false;
             }
             finally

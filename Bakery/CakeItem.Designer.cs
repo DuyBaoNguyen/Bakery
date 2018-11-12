@@ -48,11 +48,11 @@
             this.container.Cursor = System.Windows.Forms.Cursors.Hand;
             this.container.Dock = System.Windows.Forms.DockStyle.Fill;
             this.container.Image = null;
-            this.container.ImageHeight = 200;
+            this.container.ImageHeight = 250;
             this.container.Location = new System.Drawing.Point(0, 0);
             this.container.Margin = new System.Windows.Forms.Padding(2);
             this.container.Name = "container";
-            this.container.Size = new System.Drawing.Size(200, 270);
+            this.container.Size = new System.Drawing.Size(250, 338);
             this.container.TabIndex = 0;
             this.container.SizeChanged += new System.EventHandler(this.Container_SizeChanged);
             this.container.Click += new System.EventHandler(this.Container_Click);
@@ -66,11 +66,11 @@
             this.cakeCostLb.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cakeCostLb.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cakeCostLb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(255)))));
-            this.cakeCostLb.Location = new System.Drawing.Point(0, 235);
+            this.cakeCostLb.Location = new System.Drawing.Point(0, 294);
             this.cakeCostLb.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.cakeCostLb.Name = "cakeCostLb";
-            this.cakeCostLb.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.cakeCostLb.Size = new System.Drawing.Size(200, 35);
+            this.cakeCostLb.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.cakeCostLb.Size = new System.Drawing.Size(250, 44);
             this.cakeCostLb.TabIndex = 0;
             // 
             // cakeNameLb
@@ -78,11 +78,11 @@
             this.cakeNameLb.Dock = System.Windows.Forms.DockStyle.Top;
             this.cakeNameLb.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cakeNameLb.ForeColor = System.Drawing.Color.Red;
-            this.cakeNameLb.Location = new System.Drawing.Point(0, 200);
+            this.cakeNameLb.Location = new System.Drawing.Point(0, 250);
             this.cakeNameLb.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.cakeNameLb.Name = "cakeNameLb";
-            this.cakeNameLb.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.cakeNameLb.Size = new System.Drawing.Size(200, 35);
+            this.cakeNameLb.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.cakeNameLb.Size = new System.Drawing.Size(250, 44);
             this.cakeNameLb.TabIndex = 1;
             this.cakeNameLb.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -90,18 +90,19 @@
             // 
             this.maskLb.Dock = System.Windows.Forms.DockStyle.Top;
             this.maskLb.Location = new System.Drawing.Point(0, 0);
+            this.maskLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.maskLb.Name = "maskLb";
-            this.maskLb.Size = new System.Drawing.Size(200, 200);
+            this.maskLb.Size = new System.Drawing.Size(250, 250);
             this.maskLb.TabIndex = 2;
             // 
             // CakeItem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.Controls.Add(this.container);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "CakeItem";
-            this.Size = new System.Drawing.Size(200, 270);
+            this.Size = new System.Drawing.Size(250, 338);
             this.container.ResumeLayout(false);
             this.ResumeLayout(false);
 
